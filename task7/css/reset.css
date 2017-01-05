@@ -1,0 +1,29 @@
+*{
+	padding: 0;
+	margin: 0;
+	font-family: "microsoft Yahei";
+}
+
+a{
+	text-decoration: none;
+}
+
+ul, ol, dl{
+	list-style: none;
+}
+
+button, select, input{
+	border: none;
+}
+
+.clearfloat{
+	zoom :1;
+}
+
+.clearfloat:after{
+	content: "";
+	height: 0;
+	display: block;
+	visibility: hidden;
+	clear: both;
+}

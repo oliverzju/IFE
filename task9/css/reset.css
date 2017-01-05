@@ -1,0 +1,33 @@
+
+body{
+	font: 16px "Microsoft Yahei",sans-serif;
+}
+
+html, body, div, ul, li, p, input, button, a{
+	margin: 0;
+	padding: 0;
+}
+
+a{
+	text-decoration: none;
+}
+
+ul li{
+	list-style: none;
+}
+
+input{
+	border: none;
+}
+
+.clearfix{
+	zoom: 1;
+}
+
+.clearfix:after{
+	content: "";
+	height: 0;
+	display: block;
+	visibility: hidden;
+	clear: both;
+}

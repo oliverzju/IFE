@@ -1,0 +1,274 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+
+body{
+	font-family: 'Microsoft YaHei';
+	background: #dedede;
+}
+
+/*navigation start*/
+header{
+	position: relative;
+	height: 60px;
+	background: #333333;
+}
+
+header h1 img{
+	height: 58px;
+	padding-left: 20px;
+}
+
+header ul{
+	position: absolute;
+	top: 0;
+	right: 10px;
+}
+
+header ul li{
+	text-align: center;
+	display: block;
+	width: 80px;
+	float: left;
+	line-height: 58px;
+}
+
+header ul li a{
+	text-decoration: none;
+	color: white;
+	font-size: 12px;
+}
+
+header ul li:hover{
+	border-bottom: 1px solid red;
+	background: #474747;
+	border-radius: 3px;
+}
+/*navigation end*/
+
+/*main start*/
+
+article, aside{
+	margin: 30px;
+	padding: 20px;
+	background: white;
+	box-shadow: 1px 1px 2px 1px #848484;
+}
+
+article h2{
+	padding: 5px 0;
+}
+
+article h3{
+	padding: 10px 0;
+	color: #808080;
+	font-size: 16px;
+}
+
+article a{
+	color: blue;
+}
+
+article a:hover{
+	color: red;
+}
+
+.auther, .aTime{
+	/*内联元素设置行高对上下间距会有影响*/
+	line-height: 30px;
+	color: #808080;
+	font-size: 12px;
+}
+
+article p{
+	text-indent: 2em;
+}
+
+article img{
+	padding: 15px 0;
+}
+
+article ul li{
+	list-style-type: none;
+	/*display: block;*//*display block显示指定，也可以去到小圆点*/
+}
+
+article dl dd{
+	width: 120px;
+	margin: 15px;
+	border: 1px solid #ccc;
+	text-align: center;
+}
+
+article dl dd span{
+	display: block;
+	font-size: 12px;
+	margin: 5px;
+}
+
+article dl dd img{
+	width: 110px;
+	padding: 5px;
+}
+
+article ol{
+	margin: 10px 40px;
+}
+
+article table{
+	width: 100%;
+	border: 1px solid #ccc;
+	border-collapse: collapse;
+}
+
+article table thead{
+	color: white;
+	background: #333;
+}
+
+article table tfoot{
+	background: #ccc;
+}
+
+
+/*main end*/
+
+
+/*aside start*/
+
+aside h4{
+	height: 40px;
+	line-height: 40px;
+	padding-left: 10px;
+	border-left: 3px solid #ccc;
+}
+
+aside form div{
+	font-size: 14px;
+	margin: 15px 0;
+}
+
+aside form div .tips{
+	display: inline-block;
+	width: 35%;
+	text-align: right;
+	padding-right: 15px;
+
+}
+
+aside form div p{
+	margin-left: 35%;
+	/*如果.tips设成浮动，这里padding-left只用设置成15px,WHY?*/
+	padding-left: 18px;
+	font-size: 12px;
+	color: #aaa;
+}
+
+aside form div textarea{
+	width: 50%;
+	height: 100px;
+	vertical-align: text-top;
+}
+
+aside .submitButton{
+	display: inline;
+	width: 100%;
+	height: 40px;
+	border-radius: 10px;
+	background: #128fdc;
+	color: white;
+	font-size: 19px;
+	border: none;
+}
+
+aside .submitButton:hover{
+	background: #0063dc;
+}
+
+/*aside end*/
+
+footer{
+	width: 100%;
+	height: 50px;
+	background: black;
+	color: white;
+	text-align: center;
+	line-height: 50px;
+	font-size: 14px;
+}
+
+/*.article{
+	margin: 20px;
+	padding: 15px;
+	background: white;
+	box-shadow: 2px 2px 1px #888888
+}
+
+.article .picture{
+	width: 200px;
+	border: 1px solid black;
+	text-align: center;
+	overflow: hidden;
+	margin: 20px 0 20px 50px;
+}
+
+.article .picture img{
+	width: 180px;
+}
+
+.article p{
+	text-indent: 2em;
+}
+
+.order{
+	list-style-type: decimal;
+}
+
+.order li{
+	margin: 10px;
+}
+
+#mytable{
+	border-collapse: collapse;
+	width: 100%;
+	text-align: center;
+	text-overflow: auto;
+}
+
+#mytable tfoot{
+	background: #dddddd;
+}
+
+.sidetitle{
+	padding-left: 30px;
+	border-left: 2px solid gray;
+	height: 50px;
+	margin: 0;
+	line-height: 50px;
+	font-size: 20px;
+}
+
+#myform span{
+	display: inline-block;
+	width: 30%;
+    text-align: right;
+    margin-right: 10px;
+}
+
+.tips{
+	margin-left: 20%;
+	font-size: 15px;
+	color: gray;
+}
+
+.submit{
+	width: 100%;
+	font-size: 20px;
+	color: white;
+	background: blue;
+	border-radius: 10px;
+	border-style: circle;
+}*/
+
+
