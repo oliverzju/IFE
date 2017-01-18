@@ -341,7 +341,7 @@ header .nav li:hover
 
     padding: 14px 7px;
 
-    transition: 0.5s ease-in-out;
+    transition: 0.2s ease-in-out;
 
     border: 1px solid #e1e1e1;
     //top: 52px;
@@ -352,7 +352,7 @@ header .nav li:hover
 {
     position: relative;
 
-    transition: 0.5s ease-in-out;
+    transition: 0.2s ease-in-out;
     //top: -352px;
 
     background-color: #fff;
