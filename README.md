@@ -1,2 +1,8 @@
-# IFETask
-It's my baidu IFE web tasks
+# What
+It's my practice of Web Skills.
+
+# Why
+to be a full stack
+
+# How
+almost follow IFE
