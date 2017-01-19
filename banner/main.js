@@ -1,24 +1,55 @@
-window.onload = initAll;
+window.onload = init;
 
-var adImages = ["1.jpg", "2.jpg", "3.jpg"];
-var urls = ["baidu", "sina", "qq"]
-var adIndex = 0;
+var imgPath = ["img1.jpg", "img2.jpg", "img3.jpg"];
+var index = 0;
 
-function rotate() {
-	if (adIndex == adImages.length) {
-		adIndex = 0;
+function init() {
+	preNode = document.getElementsByClassName("pre")[0];
+	nextNode = document.getElementsByClassName("next")[0];
+	preNode.onclick = function() {
+		if (timer) clearInterval(timer);
+		slidePre();
+		timer = setInterval(slideNext, 2000);
 	}
-	document.images["banner"].src = adImages[adIndex++];
-	setTimeout(rotate, 3000);
+	nextNode.onclick = function() {
+		if (timer) clearInterval(timer);
+		slideNext();
+		timer = setInterval(slideNext, 2000);
+	}
+
+	navNode = document.getElementById("page_nav");
+	for (var i = 0; i < imgPath.length; i++) {
+		navNode.appendChild(document.createElement("li"));
+		(function(id) {
+			navNode.children[id].onclick = function() {
+				if (timer) clearInterval(timer);
+				index = id;
+				slideNext();
+				timer = setInterval(slideNext, 2000);
+			}
+		}(i));
+	}
+
+	slideNext();
+	timer = setInterval(slideNext, 2000);
 }
 
-function initAll() {
-	document.images["banner"].parentNode.onclick = newLocation;
-	adIndex = Math.floor(Math.random() * adImages.length);
-	rotate();
+function gotoIndex() {
+	var imgNode = document.getElementById("content");
+	imgNode.src = imgPath[index];
+	for (var i = 0; i < imgPath.length; i++) {
+		navNode.children[i].className = i == index ? "active" : "";
+	}
 }
 
-function newLocation() {
-	document.location.href = "http://" + urls[adIndex] + ".com";
-	return false;
+function slideNext() {
+	gotoIndex();
+	index++;
+	if (index >= imgPath.length) index = 0;
+}
+
+function slidePre() {
+	gotoIndex()
+	index--;
+	if (index < 0) index = imgPath.length - 1;
 }

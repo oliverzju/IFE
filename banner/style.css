@@ -1,0 +1,112 @@
+html,
+body,
+ul,
+div
+{
+    margin: 0;
+    padding: 0;
+}
+
+.wrap
+{
+    width: 1000px;
+    margin: 0 auto;
+}
+
+.wrap .title
+{
+    font: 32px 'Microsoft Yahei';
+
+    margin: 40px;
+
+    text-align: center;
+}
+
+.img_banner
+{
+    position: relative;
+
+    width: 100%;
+
+    user-select: none;
+}
+
+.img_banner img
+{
+    width: 100%;
+}
+
+.img_banner .page
+{
+    font-size: 50px;
+    font-weight: bold;
+    line-height: 50px;
+
+    position: absolute;
+    top: 50%;
+
+    height: 50px;
+    margin-top: -25px;
+
+    cursor: pointer;
+    transition: all 150ms;
+
+    opacity: .7;
+    color: white;
+}
+
+.img_banner .page:hover
+{
+    opacity: 1.0;
+}
+
+.img_banner .pre
+{
+    left: 0;
+}
+
+.img_banner .next
+{
+    right: 0;
+}
+
+.img_banner #page_nav
+{
+    font-size: 0;
+    line-height: 40px;
+
+    position: absolute;
+    bottom: 0;
+    left: 0;
+
+    width: 100%;
+    height: 60px;
+    padding: 0;
+
+    text-align: center;
+}
+
+.img_banner #page_nav li
+{
+    display: inline-block;
+
+    width: 15px;
+    height: 15px;
+    margin: 10px;
+
+    cursor: pointer;
+
+    opacity: .7;
+    border-radius: 15px;
+    background-color: #fff;
+}
+
+.img_banner #page_nav li:hover
+{
+    opacity: 1;
+}
+
+.img_banner #page_nav li.active
+{
+    opacity: 1;
+}
